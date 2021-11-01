@@ -241,26 +241,33 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hga-1o-6yD">
+                                        <rect key="frame" x="0.0" y="62" width="414" height="180"/>
+                                    </mapView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="TjO-Ac-bz3" firstAttribute="top" secondItem="gYQ-4y-vXX" secondAttribute="top" constant="242" id="8XC-kt-zSn"/>
                                     <constraint firstItem="JkD-mk-g6r" firstAttribute="top" secondItem="TjO-Ac-bz3" secondAttribute="bottom" constant="6" id="BXc-dI-Izc"/>
                                     <constraint firstItem="TjO-Ac-bz3" firstAttribute="leading" secondItem="gYQ-4y-vXX" secondAttribute="leading" id="Bme-OT-TSN"/>
+                                    <constraint firstItem="hga-1o-6yD" firstAttribute="leading" secondItem="gYQ-4y-vXX" secondAttribute="leading" id="MLb-O7-fxU"/>
                                     <constraint firstItem="JkD-mk-g6r" firstAttribute="leading" secondItem="yZg-iu-3LN" secondAttribute="trailing" id="NZS-oi-SRV"/>
                                     <constraint firstItem="XJS-Mn-toD" firstAttribute="top" secondItem="TjO-Ac-bz3" secondAttribute="bottom" constant="4" id="QdB-O0-DCU"/>
                                     <constraint firstItem="N6w-RN-ndI" firstAttribute="top" secondItem="TjO-Ac-bz3" secondAttribute="bottom" constant="4" id="Rdc-Er-h0q"/>
                                     <constraint firstAttribute="trailing" secondItem="pWq-gS-Ihg" secondAttribute="trailing" constant="8" id="SU0-ld-v0B"/>
                                     <constraint firstItem="N6w-RN-ndI" firstAttribute="leading" secondItem="XJS-Mn-toD" secondAttribute="trailing" constant="8" id="Ydh-rR-LRH"/>
                                     <constraint firstAttribute="height" constant="380" id="cmc-fo-rcc"/>
+                                    <constraint firstItem="TjO-Ac-bz3" firstAttribute="top" secondItem="hga-1o-6yD" secondAttribute="bottom" id="cyK-ze-Xgl"/>
                                     <constraint firstItem="pWq-gS-Ihg" firstAttribute="top" secondItem="xS2-qi-v0Z" secondAttribute="bottom" constant="2" id="hiR-3G-4Ui"/>
                                     <constraint firstAttribute="trailing" secondItem="N6w-RN-ndI" secondAttribute="trailing" constant="8" id="jq5-vT-k3Y"/>
                                     <constraint firstItem="xS2-qi-v0Z" firstAttribute="leading" secondItem="gYQ-4y-vXX" secondAttribute="leading" constant="8" id="kKj-xT-XiB"/>
                                     <constraint firstItem="yZg-iu-3LN" firstAttribute="leading" secondItem="gYQ-4y-vXX" secondAttribute="leading" constant="8" id="l7S-VJ-aqE"/>
                                     <constraint firstItem="pWq-gS-Ihg" firstAttribute="leading" secondItem="gYQ-4y-vXX" secondAttribute="leading" constant="8" id="ldQ-hT-0oq"/>
+                                    <constraint firstItem="hga-1o-6yD" firstAttribute="top" secondItem="pWq-gS-Ihg" secondAttribute="bottom" constant="2" id="lfF-fB-bRr"/>
                                     <constraint firstItem="xS2-qi-v0Z" firstAttribute="top" secondItem="gYQ-4y-vXX" secondAttribute="top" constant="8" id="mbm-eC-UBy"/>
                                     <constraint firstItem="yZg-iu-3LN" firstAttribute="top" secondItem="TjO-Ac-bz3" secondAttribute="bottom" constant="8" id="ok1-a1-gdE"/>
                                     <constraint firstAttribute="trailing" secondItem="xS2-qi-v0Z" secondAttribute="trailing" constant="8" id="tRX-R5-JV0"/>
+                                    <constraint firstAttribute="trailing" secondItem="hga-1o-6yD" secondAttribute="trailing" id="zWn-i5-k2m"/>
                                     <constraint firstAttribute="trailing" secondItem="TjO-Ac-bz3" secondAttribute="trailing" id="zw6-n6-hWS"/>
                                 </constraints>
                             </view>
@@ -296,6 +303,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressTextField" destination="pWq-gS-Ihg" id="wdq-MU-gSf"/>
+                        <outlet property="mapView" destination="hga-1o-6yD" id="2bq-RY-lG6"/>
                         <outlet property="nameTextField" destination="xS2-qi-v0Z" id="Tnt-CK-Laj"/>
                         <outlet property="ratingLabel" destination="JkD-mk-g6r" id="Id0-5A-21Y"/>
                     </connections>
