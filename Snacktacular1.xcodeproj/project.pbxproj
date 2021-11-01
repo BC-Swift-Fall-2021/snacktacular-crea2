@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		8353893D272F795E0041A150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353893C272F795E0041A150 /* AppDelegate.swift */; };
 		8353893F272F795E0041A150 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353893E272F795E0041A150 /* SceneDelegate.swift */; };
-		83538941272F795E0041A150 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83538940272F795E0041A150 /* ViewController.swift */; };
+		83538941272F795E0041A150 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83538940272F795E0041A150 /* LoginViewController.swift */; };
 		83538944272F795E0041A150 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83538942272F795E0041A150 /* Main.storyboard */; };
 		83538946272F79650041A150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83538945272F79650041A150 /* Assets.xcassets */; };
 		83538949272F79650041A150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83538947272F79650041A150 /* LaunchScreen.storyboard */; };
+		83538951272F7CAC0041A150 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83538950272F7CAC0041A150 /* GoogleService-Info.plist */; };
+		83D80F63272F999200668B76 /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D80F62272F999100668B76 /* SpotListViewController.swift */; };
+		83D80F65272F9C3E00668B76 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D80F64272F9C3E00668B76 /* SpotTableViewCell.swift */; };
+		83D80F67272FA08700668B76 /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D80F66272FA08700668B76 /* SpotDetailViewController.swift */; };
+		E148217802B3A04A59470E25 /* Pods_Snacktacular1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65387F5EDB32AE794E9F7446 /* Pods_Snacktacular1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CA5BC291537B84C56197021 /* Pods-Snacktacular1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular1.release.xcconfig"; path = "Target Support Files/Pods-Snacktacular1/Pods-Snacktacular1.release.xcconfig"; sourceTree = "<group>"; };
+		65387F5EDB32AE794E9F7446 /* Pods_Snacktacular1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snacktacular1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83538939272F795E0041A150 /* Snacktacular1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8353893C272F795E0041A150 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8353893E272F795E0041A150 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83538940272F795E0041A150 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83538940272F795E0041A150 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83538943272F795E0041A150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83538945272F79650041A150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83538948272F79650041A150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8353894A272F79650041A150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83538950272F7CAC0041A150 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		83D80F62272F999100668B76 /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
+		83D80F64272F9C3E00668B76 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
+		83D80F66272FA08700668B76 /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
+		92B1498AD370028F7173FE6E /* Pods-Snacktacular1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular1.debug.xcconfig"; path = "Target Support Files/Pods-Snacktacular1/Pods-Snacktacular1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E148217802B3A04A59470E25 /* Pods_Snacktacular1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69311BDF10F95936D2A6CBD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92B1498AD370028F7173FE6E /* Pods-Snacktacular1.debug.xcconfig */,
+				5CA5BC291537B84C56197021 /* Pods-Snacktacular1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		83538930272F795E0041A150 = {
 			isa = PBXGroup;
 			children = (
 				8353893B272F795E0041A150 /* Snacktacular1 */,
 				8353893A272F795E0041A150 /* Products */,
+				69311BDF10F95936D2A6CBD9 /* Pods */,
+				9D2A522CFDF9F58E2BFBBA01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +82,25 @@
 			children = (
 				8353893C272F795E0041A150 /* AppDelegate.swift */,
 				8353893E272F795E0041A150 /* SceneDelegate.swift */,
-				83538940272F795E0041A150 /* ViewController.swift */,
+				83538940272F795E0041A150 /* LoginViewController.swift */,
+				83D80F62272F999100668B76 /* SpotListViewController.swift */,
+				83D80F64272F9C3E00668B76 /* SpotTableViewCell.swift */,
+				83D80F66272FA08700668B76 /* SpotDetailViewController.swift */,
 				83538942272F795E0041A150 /* Main.storyboard */,
 				83538945272F79650041A150 /* Assets.xcassets */,
 				83538947272F79650041A150 /* LaunchScreen.storyboard */,
 				8353894A272F79650041A150 /* Info.plist */,
+				83538950272F7CAC0041A150 /* GoogleService-Info.plist */,
 			);
 			path = Snacktacular1;
+			sourceTree = "<group>";
+		};
+		9D2A522CFDF9F58E2BFBBA01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65387F5EDB32AE794E9F7446 /* Pods_Snacktacular1.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8353894D272F79650041A150 /* Build configuration list for PBXNativeTarget "Snacktacular1" */;
 			buildPhases = (
+				CB3A061E81B74157F07F22BE /* [CP] Check Pods Manifest.lock */,
 				83538935272F795E0041A150 /* Sources */,
 				83538936272F795E0041A150 /* Frameworks */,
 				83538937272F795E0041A150 /* Resources */,
+				8A7E9215906C88429509CA58 /* [CP] Embed Pods Frameworks */,
+				D96E342B596EDC893DE8AFB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83538949272F79650041A150 /* LaunchScreen.storyboard in Resources */,
+				83538951272F7CAC0041A150 /* GoogleService-Info.plist in Resources */,
 				83538946272F79650041A150 /* Assets.xcassets in Resources */,
 				83538944272F795E0041A150 /* Main.storyboard in Resources */,
 			);
@@ -133,13 +173,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A7E9215906C88429509CA58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snacktacular1/Pods-Snacktacular1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snacktacular1/Pods-Snacktacular1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Snacktacular1/Pods-Snacktacular1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB3A061E81B74157F07F22BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Snacktacular1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D96E342B596EDC893DE8AFB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snacktacular1/Pods-Snacktacular1-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snacktacular1/Pods-Snacktacular1-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Snacktacular1/Pods-Snacktacular1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83538935272F795E0041A150 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83538941272F795E0041A150 /* ViewController.swift in Sources */,
+				83D80F63272F999200668B76 /* SpotListViewController.swift in Sources */,
+				83538941272F795E0041A150 /* LoginViewController.swift in Sources */,
 				8353893D272F795E0041A150 /* AppDelegate.swift in Sources */,
+				83D80F67272FA08700668B76 /* SpotDetailViewController.swift in Sources */,
+				83D80F65272F9C3E00668B76 /* SpotTableViewCell.swift in Sources */,
 				8353893F272F795E0041A150 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +386,7 @@
 		};
 		8353894E272F79650041A150 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B1498AD370028F7173FE6E /* Pods-Snacktacular1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +415,7 @@
 		};
 		8353894F272F79650041A150 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA5BC291537B84C56197021 /* Pods-Snacktacular1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
