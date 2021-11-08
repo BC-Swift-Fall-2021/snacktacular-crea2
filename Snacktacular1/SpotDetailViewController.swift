@@ -20,10 +20,16 @@ class SpotDetailViewController: UIViewController {
     var spot: Spot!
     let reginDistance: CLLocationDegrees = 750.0
     var locationManager: CLLocationManager!
-    var reviews: [String] = ["Tasty", "Awful", "Tast", "Awful", "Tast", "Awful", "Tast", "Awful", "Tast", "Awful", "Tast", "Awful", "Tast", "Awful"]
+    var reviews: Reviews!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // hide keyboard if we tap outside of a field
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -33,6 +39,7 @@ class SpotDetailViewController: UIViewController {
             
         }
         setupMapView()
+        reviews = Reviews()
         updateUserInterface()
     }
     
@@ -58,6 +65,24 @@ class SpotDetailViewController: UIViewController {
         spot.name = nameTextField.text!
         spot.address = addressTextField.text!
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        updateFromInterface()
+        switch segue.identifier ?? "" {
+        case "AddReview":
+            let navigationController = segue.destination as! UINavigationController
+            let destination = navigationController.viewControllers.first as!
+            ReviewTableViewController
+            destination.spot = spot
+        case "ShowReview":
+            let destination = segue.destination as! ReviewTableViewController
+            let selectedIndexPath = tableView.indexPathForSelectedRow!
+            destination.review = reviews.reviewArray[selectedIndexPath.row]
+            destination.spot = spot
+        default:
+            print("Could not find a case for segue identifier")
+        }
     }
     
     func leaveViewController() {
@@ -87,6 +112,10 @@ class SpotDetailViewController: UIViewController {
             autocompleteController.delegate = self
         // Display the autocomplete view controller.
             present(autocompleteController, animated: true, completion: nil)
+    }
+    @IBAction func ratingButtonPressed(_ sender: UIButton) {
+        // TODO: eventually check if spot was saved
+        performSegue(withIdentifier: "AddReview", sender: nil)
     }
     
 }
@@ -196,7 +225,7 @@ extension SpotDetailViewController: CLLocationManagerDelegate {
 
 extension SpotDetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return reviews.count
+        return reviews.reviewArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
