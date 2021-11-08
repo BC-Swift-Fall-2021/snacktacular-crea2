@@ -43,7 +43,7 @@ class ReviewTableViewController: UITableViewController {
         }
         
         func updateFromUserInterface() {
-            review.title = reviewTitleField.text!
+            review.title = reveiwTitleField.text!
             review.text = reviewTextView.text!
         }
     
