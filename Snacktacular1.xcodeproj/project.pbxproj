@@ -21,6 +21,8 @@
 		836E873A27301EE500EF1265 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E873927301EE500EF1265 /* UIViewController+alert.swift */; };
 		836E873C27304F0200EF1265 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E873B27304F0200EF1265 /* Spots.swift */; };
 		836E873E2730590500EF1265 /* APIkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E873D2730590500EF1265 /* APIkeys.swift */; };
+		83842760274208F500A3302F /* UIView+addBoarder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8384275F274208F500A3302F /* UIView+addBoarder.swift */; };
+		838427622742122C00A3302F /* UIBarButtonItem+hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838427612742122C00A3302F /* UIBarButtonItem+hide.swift */; };
 		83D80F63272F999200668B76 /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D80F62272F999100668B76 /* SpotListViewController.swift */; };
 		83D80F65272F9C3E00668B76 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D80F64272F9C3E00668B76 /* SpotTableViewCell.swift */; };
 		83D80F67272FA08700668B76 /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D80F66272FA08700668B76 /* SpotDetailViewController.swift */; };
@@ -47,6 +49,8 @@
 		836E873927301EE500EF1265 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		836E873B27304F0200EF1265 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
 		836E873D2730590500EF1265 /* APIkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIkeys.swift; sourceTree = "<group>"; };
+		8384275F274208F500A3302F /* UIView+addBoarder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBoarder.swift"; sourceTree = "<group>"; };
+		838427612742122C00A3302F /* UIBarButtonItem+hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+hide.swift"; sourceTree = "<group>"; };
 		83D80F62272F999100668B76 /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
 		83D80F64272F9C3E00668B76 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
 		83D80F66272FA08700668B76 /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				8300612027399DE1005827EA /* SpotReviewTableViewCell.swift */,
 				8300611A27396876005827EA /* ReviewTableViewController.swift */,
 				836E873927301EE500EF1265 /* UIViewController+alert.swift */,
+				8384275F274208F500A3302F /* UIView+addBoarder.swift */,
+				838427612742122C00A3302F /* UIBarButtonItem+hide.swift */,
 				836E873D2730590500EF1265 /* APIkeys.swift */,
 				83538942272F795E0041A150 /* Main.storyboard */,
 				83538945272F79650041A150 /* Assets.xcassets */,
@@ -265,9 +271,11 @@
 				83D80F63272F999200668B76 /* SpotListViewController.swift in Sources */,
 				83538941272F795E0041A150 /* LoginViewController.swift in Sources */,
 				836E873E2730590500EF1265 /* APIkeys.swift in Sources */,
+				83842760274208F500A3302F /* UIView+addBoarder.swift in Sources */,
 				8353893D272F795E0041A150 /* AppDelegate.swift in Sources */,
 				8300611B27396876005827EA /* ReviewTableViewController.swift in Sources */,
 				8300611D27398EAA005827EA /* Review.swift in Sources */,
+				838427622742122C00A3302F /* UIBarButtonItem+hide.swift in Sources */,
 				83D80F67272FA08700668B76 /* SpotDetailViewController.swift in Sources */,
 				836E873C27304F0200EF1265 /* Spots.swift in Sources */,
 				8300612127399DE1005827EA /* SpotReviewTableViewCell.swift in Sources */,
